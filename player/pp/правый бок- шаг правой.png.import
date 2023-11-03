@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6tfc1q7hyrt2"
-path="res://.godot/imported/player_front.png-f9cb203634e44863e61fd83154318f0b.ctex"
+uid="uid://bg05in8f7ldac"
+path="res://.godot/imported/правый бок- шаг правой.png-cee0acf5a6d81657de067bdcf3d16c6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/player_front.png"
-dest_files=["res://.godot/imported/player_front.png-f9cb203634e44863e61fd83154318f0b.ctex"]
+source_file="res://player/pp/правый бок- шаг правой.png"
+dest_files=["res://.godot/imported/правый бок- шаг правой.png-cee0acf5a6d81657de067bdcf3d16c6c.ctex"]
 
 [params]
 
