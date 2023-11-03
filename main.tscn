@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://b57mpev2ion1u"]
+[gd_scene load_steps=2 format=3 uid="uid://b57mpev2ion1u"]
 
-[node name="main" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://csbdsjq5hjr58" path="res://player/player.tscn" id="1_pojqx"]
+
+[node name="level" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_pojqx")]
+position = Vector2(160, 169)
+collision_mask = 3
+is_player = true
