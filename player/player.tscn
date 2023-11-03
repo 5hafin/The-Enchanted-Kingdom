@@ -1,11 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4gx73tkor2p5"]
+[gd_scene load_steps=5 format=3 uid="uid://c4gx73tkor2p5"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ufj4m"]
 [ext_resource type="Texture2D" uid="uid://gs5t3vktwv0u" path="res://player/player.png" id="2_u2coq"]
+[ext_resource type="PackedScene" uid="uid://bk3tfdrljkgne" path="res://player/attack.tscn" id="3_ohi43"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7v7xq"]
+radius = 15.0
+height = 88.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ufj4m")
 
 [node name="Player" type="Sprite2D" parent="."]
-position = Vector2(554, 355)
+position = Vector2(349.375, 370.75)
+scale = Vector2(0.106875, 0.106875)
 texture = ExtResource("2_u2coq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(357, 376)
+shape = SubResource("CapsuleShape2D_7v7xq")
+
+[node name="attack" parent="." instance=ExtResource("3_ohi43")]
+position = Vector2(111, 17)

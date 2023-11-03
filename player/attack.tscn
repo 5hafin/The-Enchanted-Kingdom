@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk3tfdrljkgne"]
+
+[ext_resource type="Script" path="res://player/attack.gd" id="1_1c2kd"]
+
+[node name="attack" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_1c2kd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(270.914, 305.698)
+scale = Vector2(0.302072, 0.32621)
+polygon = PackedVector2Array(-1, 14, -7, 307, 294, 192, 223, -45, 46, -77)
