@@ -2,16 +2,31 @@ extends "res://player/player.gd"
 
 var stands = true
 var destination = Vector2()
-
-
+var prev_position = Vector2()
+var target = null
 
 func _ready():
 	SPEED = 300
 
 func _process(delta):
 	if velocity:
+		prev_position = position
 		move_and_slide()
 	wander()
+	search_for_target()
+	
+func search_for_target():
+	var pl = get_parent().get_player()
+	if position.distance_to(pl.position) < 200:
+		cancel_movment()
+		target = pl
+		
+	else:
+		if target:
+			cancel_movment()
+		target = null
+	if target:
+		set_destination(target.position)
 
 func set_destination(dest):
 	destination = dest
@@ -34,7 +49,8 @@ func wander():
 	elif velocity != Vector2():
 		if pos.distance_to(destination) <= 50:
 			cancel_movment()
-
+		elif pos.distance_to(prev_position)<= 0.6:
+			cancel_movment()
 
 func _on_standing_timer_timeout():
 	stands = true
