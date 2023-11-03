@@ -21,7 +21,7 @@ func set_destination(dest):
 func cancel_movment():
 	velocity = Vector2()
 	destination = Vector2()
-	$Standing_Timer.start(2)
+	$Standing_Timer.start(0)
 
 func wander():
 	var pos = position
