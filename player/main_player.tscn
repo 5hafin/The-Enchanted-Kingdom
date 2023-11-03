@@ -1,20 +1,116 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdcueh35nvqt6"]
+[gd_scene load_steps=18 format=3 uid="uid://bdcueh35nvqt6"]
 
 [ext_resource type="PackedScene" uid="uid://cyni20datu847" path="res://player/player.tscn" id="1_gvjqa"]
 [ext_resource type="Script" path="res://player/main_player.gd" id="2_vuc4n"]
 [ext_resource type="PackedScene" uid="uid://bavw7plm5gqjv" path="res://player/camera_2d.tscn" id="2_xml7v"]
+[ext_resource type="Texture2D" uid="uid://pyheuif8gcwt" path="res://player/pp/пер часть.png" id="4_6ovab"]
+[ext_resource type="Texture2D" uid="uid://fskmwwlvjn8k" path="res://player/pp/1 лиц сторонв- шаг левой готово.png" id="5_r3y0t"]
+[ext_resource type="Texture2D" uid="uid://caoxmsregnsuv" path="res://player/pp/1 лиц сторонв- шаг правой( готово).png" id="6_6ehhp"]
+[ext_resource type="Texture2D" uid="uid://cm5f8ylppdoj4" path="res://player/pp/левый бок - шаг лев.png" id="7_4h0hc"]
+[ext_resource type="Texture2D" uid="uid://c73ppdo371k1c" path="res://player/pp/левый бок.png" id="8_01ywc"]
+[ext_resource type="Texture2D" uid="uid://jvwn8h3f2lxa" path="res://player/pp/левый бок -шаг правой.png" id="9_x37ff"]
+[ext_resource type="Texture2D" uid="uid://cq62tg3kojm3v" path="res://player/pp/правый бок -шаг левой.png" id="10_iweka"]
+[ext_resource type="Texture2D" uid="uid://cw43gpyi6qmvr" path="res://player/pp/правый бок.png" id="11_acriy"]
+[ext_resource type="Texture2D" uid="uid://bg05in8f7ldac" path="res://player/pp/правый бок- шаг правой.png" id="12_48ens"]
+[ext_resource type="Texture2D" uid="uid://drmnmp0tqjdj6" path="res://player/pp/спина -шаг левойpng.png" id="13_83kmu"]
+[ext_resource type="Texture2D" uid="uid://b8cloq4w7wgx1" path="res://player/pp/2- задняя часть(готово).png" id="14_gavqe"]
+[ext_resource type="Texture2D" uid="uid://bvnwfgn2j676c" path="res://player/pp/спина -шаг правой.png" id="15_01yit"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gju66"]
-size = Vector2(37, 16)
+size = Vector2(24, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7avbg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6ovab")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_r3y0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6ovab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6ehhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6ovab")
+}],
+"loop": true,
+"name": &"walk down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_4h0hc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_01ywc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x37ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_01ywc")
+}],
+"loop": true,
+"name": &"walk left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_iweka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_acriy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_48ens")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_acriy")
+}],
+"loop": true,
+"name": &"walk right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_83kmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gavqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_01yit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gavqe")
+}],
+"loop": true,
+"name": &"walk up",
+"speed": 5.0
+}]
 
 [node name="main_player" instance=ExtResource("1_gvjqa")]
 collision_mask = 7
 script = ExtResource("2_vuc4n")
 
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(-2.5, 26)
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_gju66")
 
-[node name="Camera2D" parent="." index="2" instance=ExtResource("2_xml7v")]
+[node name="Camera2D" parent="." index="1" instance=ExtResource("2_xml7v")]
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
+
+[node name="Anim" type="AnimatedSprite2D" parent="." index="2"]
+sprite_frames = SubResource("SpriteFrames_7avbg")
+animation = &"walk down"
+frame_progress = 0.738822

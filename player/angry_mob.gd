@@ -18,18 +18,20 @@ func _process(delta):
 	
 func search_for_target():
 	var pl = get_parent().get_player()
-	if position.distance_to(pl.position) < 200:
+	
+	if target:
+		if position.distance_to(target.position) > 200:
+			cancel_movment()
+		else:
+			set_destination(target.position)
+	
+	elif position.distance_to(pl.position) < 200:
 		cancel_movment()
 		SPEED = default_speed*3 if SPEED == default_speed else SPEED
 		
 		target = pl
 
-	else:
-		if target:
-			cancel_movment()
-		target = null
-	if target:
-		set_destination(target.position)
+
 
 func set_destination(dest):
 	destination = dest

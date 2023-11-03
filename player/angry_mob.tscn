@@ -1,20 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmqgkqsset1qo"]
+[gd_scene load_steps=5 format=3 uid="uid://dmqgkqsset1qo"]
 
 [ext_resource type="PackedScene" uid="uid://cyni20datu847" path="res://player/player.tscn" id="1_n545h"]
 [ext_resource type="Script" path="res://player/angry_mob.gd" id="2_2okrp"]
+[ext_resource type="Texture2D" uid="uid://pyheuif8gcwt" path="res://player/pp/пер часть.png" id="3_svyht"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mcxiw"]
-size = Vector2(38, 36)
+size = Vector2(30, 25)
 
 [node name="angry_mob" instance=ExtResource("1_n545h")]
 script = ExtResource("2_2okrp")
 
-[node name="Sprite2D" parent="." index="0"]
-position = Vector2(1, 21.375)
-scale = Vector2(1.375, 0.805147)
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(0, 0.230001)
+scale = Vector2(1, 0.595)
+texture = ExtResource("3_svyht")
 
 [node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(-2, 22)
+position = Vector2(-2, 2)
 shape = SubResource("RectangleShape2D_mcxiw")
 
 [node name="Standing_Timer" type="Timer" parent="." index="2"]
