@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdcueh35nvqt6"]
+
+[ext_resource type="PackedScene" uid="uid://cyni20datu847" path="res://player/player.tscn" id="1_gvjqa"]
+[ext_resource type="Script" path="res://player/main_player.gd" id="2_vuc4n"]
+[ext_resource type="PackedScene" uid="uid://bavw7plm5gqjv" path="res://player/camera_2d.tscn" id="2_xml7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gju66"]
+size = Vector2(37, 14)
+
+[node name="main_player" instance=ExtResource("1_gvjqa")]
+collision_mask = 7
+script = ExtResource("2_vuc4n")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-2.5, 27)
+shape = SubResource("RectangleShape2D_gju66")
+
+[node name="Camera2D" parent="." index="2" instance=ExtResource("2_xml7v")]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0

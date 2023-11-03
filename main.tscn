@@ -1,10 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://b57mpev2ion1u"]
+[gd_scene load_steps=3 format=3 uid="uid://b57mpev2ion1u"]
 
-[ext_resource type="PackedScene" uid="uid://csbdsjq5hjr58" path="res://player/player.tscn" id="1_pojqx"]
+[ext_resource type="PackedScene" uid="uid://bdcueh35nvqt6" path="res://player/main_player.tscn" id="1_mr8pm"]
+[ext_resource type="PackedScene" uid="uid://dmqgkqsset1qo" path="res://player/angry_mob.tscn" id="2_0q5jb"]
 
 [node name="level" type="Node2D"]
 
-[node name="player" parent="." instance=ExtResource("1_pojqx")]
-position = Vector2(160, 169)
-collision_mask = 3
-is_player = true
+[node name="main_player" parent="." instance=ExtResource("1_mr8pm")]
+position = Vector2(6, -8)
+
+[node name="angry_mob" parent="." instance=ExtResource("2_0q5jb")]
+position = Vector2(222, 120)
+
+[node name="angry_mob2" parent="." instance=ExtResource("2_0q5jb")]
+position = Vector2(43, 195)
+
+[node name="angry_mob3" parent="." instance=ExtResource("2_0q5jb")]
+position = Vector2(-388, 88)
+
+[node name="angry_mob4" parent="." instance=ExtResource("2_0q5jb")]
+position = Vector2(361, -101)
+
+[node name="angry_mob5" parent="." instance=ExtResource("2_0q5jb")]
+position = Vector2(165, -176)
