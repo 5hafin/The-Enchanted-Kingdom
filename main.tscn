@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b57mpev2ion1u"]
 
-[ext_resource type="PackedScene" path="res://player/main_player.tscn" id="1_mr8pm"]
+[ext_resource type="PackedScene" uid="uid://bdcueh35nvqt6" path="res://player/main_player.tscn" id="1_mr8pm"]
 [ext_resource type="PackedScene" uid="uid://dmqgkqsset1qo" path="res://player/angry_mob.tscn" id="2_0q5jb"]
 
 [node name="level" type="Node2D"]
@@ -10,20 +10,15 @@ position = Vector2(6, -8)
 
 [node name="angry_mob" parent="." instance=ExtResource("2_0q5jb")]
 position = Vector2(222, 120)
-is_player = false
 
 [node name="angry_mob2" parent="." instance=ExtResource("2_0q5jb")]
 position = Vector2(43, 195)
-is_player = false
 
 [node name="angry_mob3" parent="." instance=ExtResource("2_0q5jb")]
 position = Vector2(-388, 88)
-is_player = false
 
 [node name="angry_mob4" parent="." instance=ExtResource("2_0q5jb")]
 position = Vector2(361, -101)
-is_player = false
 
 [node name="angry_mob5" parent="." instance=ExtResource("2_0q5jb")]
 position = Vector2(165, -176)
-is_player = false

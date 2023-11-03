@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyni20datu847"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ufj4m"]
-[ext_resource type="Texture2D" uid="uid://c6tfc1q7hyrt2" path="res://player/player_front.png" id="2_ju8u7"]
+[ext_resource type="Texture2D" uid="uid://pyheuif8gcwt" path="res://player/pp/пер часть.png" id="2_6b6yv"]
 
 [node name="units" type="CharacterBody2D"]
 collision_layer = 2
@@ -10,7 +10,7 @@ script = ExtResource("1_ufj4m")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, 2)
 scale = Vector2(1.375, 1.375)
-texture = ExtResource("2_ju8u7")
+texture = ExtResource("2_6b6yv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3, 24)
