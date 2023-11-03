@@ -1,13 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://b57mpev2ion1u"]
+[gd_scene format=3 uid="uid://b57mpev2ion1u"]
 
-[ext_resource type="PackedScene" uid="uid://c4gx73tkor2p5" path="res://player/player.tscn" id="1_pojqx"]
-[ext_resource type="PackedScene" uid="uid://w7gwwf62p4xy" path="res://mobs/mob.tscn" id="2_224mx"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_pojqx")]
-position = Vector2(17, -6)
-collision_layer = 2
-
-[node name="mob" parent="." instance=ExtResource("2_224mx")]
-position = Vector2(597, 256)
+[node name="main" type="Node2D"]
