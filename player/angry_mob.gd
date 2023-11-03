@@ -20,7 +20,7 @@ func search_for_target():
 	var pl = get_parent().get_player()
 	if position.distance_to(pl.position) < 200:
 		cancel_movment()
-		SPEED = default_speed*5 if SPEED == default_speed else SPEED
+		SPEED = default_speed*3 if SPEED == default_speed else SPEED
 		
 		target = pl
 
