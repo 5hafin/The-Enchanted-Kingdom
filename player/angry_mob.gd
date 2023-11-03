@@ -4,9 +4,10 @@ var stands = true
 var destination = Vector2()
 var prev_position = Vector2()
 var target = null
+var default_speed = 100
 
 func _ready():
-	SPEED = 300
+	SPEED = default_speed
 
 func _process(delta):
 	if velocity:
@@ -19,8 +20,10 @@ func search_for_target():
 	var pl = get_parent().get_player()
 	if position.distance_to(pl.position) < 200:
 		cancel_movment()
-		target = pl
+		SPEED = default_speed*5 if SPEED == default_speed else SPEED
 		
+		target = pl
+
 	else:
 		if target:
 			cancel_movment()
@@ -37,6 +40,7 @@ func cancel_movment():
 	velocity = Vector2()
 	destination = Vector2()
 	$Standing_Timer.start(0)
+	SPEED = default_speed
 
 func wander():
 	var pos = position

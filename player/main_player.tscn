@@ -5,14 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://bavw7plm5gqjv" path="res://player/camera_2d.tscn" id="2_xml7v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gju66"]
-size = Vector2(37, 14)
+size = Vector2(37, 16)
 
 [node name="main_player" instance=ExtResource("1_gvjqa")]
 collision_mask = 7
 script = ExtResource("2_vuc4n")
 
 [node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(-2.5, 27)
+position = Vector2(-2.5, 26)
 shape = SubResource("RectangleShape2D_gju66")
 
 [node name="Camera2D" parent="." index="2" instance=ExtResource("2_xml7v")]
