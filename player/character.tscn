@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://d2vwt5u5wu07j"]
+[gd_scene load_steps=18 format=3 uid="uid://d2vwt5u5wu07j"]
 
 [ext_resource type="Script" path="res://Character.gd" id="1_hj00e"]
 [ext_resource type="Texture2D" uid="uid://cm5f8ylppdoj4" path="res://player/pp/левый бок - шаг лев.png" id="1_jllp7"]
@@ -15,7 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://caoxmsregnsuv" path="res://player/pp/1 лиц сторонв- шаг правой( готово).png" id="12_g0tso"]
 [ext_resource type="Texture2D" uid="uid://dbg6c3xfubg5" path="res://player/веньетка.png" id="14_jdyrl"]
 [ext_resource type="PackedScene" uid="uid://cqk1fyixmlaka" path="res://player/ui/hp_bar.tscn" id="15_gvtu6"]
-[ext_resource type="Texture2D" uid="uid://d064va86k0okj" path="res://player/ui/Cool-Glow-Light-Effect-PNG-Photos.png" id="16_ni7ax"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_buvcu"]
 animations = [{
@@ -118,11 +117,6 @@ zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
-[node name="Веньетка" type="Sprite2D" parent="Camera2D"]
-visible = false
-scale = Vector2(0.65, 0.65)
-texture = ExtResource("14_jdyrl")
-
 [node name="Node2D" type="Node2D" parent="Camera2D"]
 position = Vector2(0, 8)
 scale = Vector2(1.3, 1.3)
@@ -135,7 +129,7 @@ offset_top = -193.846
 offset_right = 290.923
 offset_bottom = -129.846
 
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(0, -0.499969)
-scale = Vector2(1, 1.001)
-texture = ExtResource("16_ni7ax")
+[node name="Веньетка" type="Sprite2D" parent="Camera2D"]
+visible = false
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("14_jdyrl")
