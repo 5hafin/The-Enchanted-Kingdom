@@ -30,9 +30,3 @@ func start_anim():
 	elif velocity.y == 0 and velocity.x == 0:
 		$Anim.play("Idle")
 
-func set_start_hp(hp_bar, max_hp_bar):
-	get_parent().hp_bar().value = hp_bar
-	get_parent().hp_bar().max_value = max_hp_bar
-	
-func update_hp():
-	hp_bar().value = hp_bar

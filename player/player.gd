@@ -8,5 +8,5 @@ var SPEED = 200.0
 @export var max_hp = 3
 
 func _ready():
-	set_start_hp()
+
 
