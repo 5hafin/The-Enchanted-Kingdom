@@ -1,10 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://bdcueh35nvqt6"]
+[gd_scene load_steps=17 format=3 uid="uid://bdcueh35nvqt6"]
 
 [ext_resource type="PackedScene" uid="uid://cyni20datu847" path="res://player/player.tscn" id="1_gvjqa"]
 [ext_resource type="Script" path="res://player/main_player.gd" id="2_vuc4n"]
-[ext_resource type="PackedScene" uid="uid://bavw7plm5gqjv" path="res://player/camera_2d.tscn" id="2_xml7v"]
 [ext_resource type="Texture2D" uid="uid://pyheuif8gcwt" path="res://player/pp/пер часть.png" id="4_6ovab"]
-[ext_resource type="Texture2D" uid="uid://dbg6c3xfubg5" path="res://player/веньетка.png" id="4_ga80r"]
 [ext_resource type="Texture2D" uid="uid://fskmwwlvjn8k" path="res://player/pp/1 лиц сторонв- шаг левой готово.png" id="5_r3y0t"]
 [ext_resource type="Texture2D" uid="uid://caoxmsregnsuv" path="res://player/pp/1 лиц сторонв- шаг правой( готово).png" id="6_6ehhp"]
 [ext_resource type="Texture2D" uid="uid://cm5f8ylppdoj4" path="res://player/pp/левый бок - шаг лев.png" id="7_4h0hc"]
@@ -107,16 +105,7 @@ script = ExtResource("2_vuc4n")
 position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_gju66")
 
-[node name="Camera2D" parent="." index="1" instance=ExtResource("2_xml7v")]
-zoom = Vector2(2, 2)
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Camera2D" index="0"]
-scale = Vector2(1.115, 1.45)
-texture = ExtResource("4_ga80r")
-
-[node name="Anim" type="AnimatedSprite2D" parent="." index="2"]
+[node name="Anim" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_7avbg")
 animation = &"walk down"
 frame_progress = 0.708161

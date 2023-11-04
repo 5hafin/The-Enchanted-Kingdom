@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://bavw7plm5gqjv"]
+[gd_scene load_steps=2 format=3 uid="uid://bavw7plm5gqjv"]
+
+[ext_resource type="Texture2D" uid="uid://dbg6c3xfubg5" path="res://player/веньетка.png" id="1_qqkph"]
 
 [node name="Camera2D" type="Camera2D"]
+
+[node name="Веньетка" type="Sprite2D" parent="."]
+scale = Vector2(0.74, 0.74)
+texture = ExtResource("1_qqkph")
