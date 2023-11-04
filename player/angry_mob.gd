@@ -20,7 +20,7 @@ func search_for_target():
 	var pl = get_parent().get_player()
 	
 	if target:
-		if position.distance_to(target.position) > 200:
+		if position.distance_to(target.position) > 300:
 			cancel_movment()
 		else:
 			set_destination(target.position)
@@ -42,6 +42,7 @@ func cancel_movment():
 	velocity = Vector2()
 	destination = Vector2()
 	$Standing_Timer.start(1)
+	target = null
 	SPEED = default_speed
 
 func wander():
@@ -52,10 +53,10 @@ func wander():
 		var y = int(randf_range(pos.y-350, pos.y+350))
 		
 		set_destination(Vector2(x, y))
-	elif velocity != Vector2():
-		if pos.distance_to(destination) <= 50:
+	elif velocity != Vector2() and not target:
+		if pos.distance_to(destination) <= SPEED-100:
 			cancel_movment()
-		elif pos.distance_to(prev_position)<= 0.2:
+		elif pos.distance_to(prev_position)<= 0.6:
 			cancel_movment()
 
 func _on_standing_timer_timeout():
