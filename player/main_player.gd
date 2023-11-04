@@ -3,10 +3,6 @@ extends "res://player/player.gd"
 @onready var animch = get_node("main_player")
 var vel = Vector2()
 
-var hp_bar = 3
-var max_hp_bar=3
-
-
 
 func _physics_process(delta):
 	var direction = Input.get_vector("left","right","up","down")
@@ -29,4 +25,3 @@ func start_anim():
 		$Anim.play("walk down")
 	elif velocity.y == 0 and velocity.x == 0:
 		$Anim.play("Idle")
-
