@@ -41,7 +41,7 @@ func set_destination(dest):
 func cancel_movment():
 	velocity = Vector2()
 	destination = Vector2()
-	$Standing_Timer.start(0)
+	$Standing_Timer.start(1)
 	SPEED = default_speed
 
 func wander():
@@ -55,7 +55,7 @@ func wander():
 	elif velocity != Vector2():
 		if pos.distance_to(destination) <= 50:
 			cancel_movment()
-		elif pos.distance_to(prev_position)<= 0.6:
+		elif pos.distance_to(prev_position)<= 0.2:
 			cancel_movment()
 
 func _on_standing_timer_timeout():

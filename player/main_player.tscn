@@ -107,10 +107,11 @@ position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_gju66")
 
 [node name="Camera2D" parent="." index="1" instance=ExtResource("2_xml7v")]
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="Anim" type="AnimatedSprite2D" parent="." index="2"]
 sprite_frames = SubResource("SpriteFrames_7avbg")
 animation = &"walk down"
-frame_progress = 0.738822
+frame_progress = 0.708161
