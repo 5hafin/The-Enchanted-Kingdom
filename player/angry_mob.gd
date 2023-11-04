@@ -25,7 +25,7 @@ func search_for_target():
 		else:
 			set_destination(target.position)
 	
-	elif position.distance_to(pl.position) < 200:
+	elif position.distance_to(pl.position) < 100:
 		cancel_movment()
 		SPEED = default_speed*3 if SPEED == default_speed else SPEED
 		
@@ -49,8 +49,8 @@ func wander():
 	var pos = position
 	if stands:
 		randomize()
-		var x = int(randf_range(pos.x-350, pos.x+350))
-		var y = int(randf_range(pos.y-350, pos.y+350))
+		var x = int(randf_range(pos.x-10, pos.x+10))
+		var y = int(randf_range(pos.y-10, pos.y+10))
 		
 		set_destination(Vector2(x, y))
 	elif velocity != Vector2() and not target:

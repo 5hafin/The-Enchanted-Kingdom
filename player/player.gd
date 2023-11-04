@@ -4,5 +4,7 @@ extends CharacterBody2D
 
 var SPEED = 200.0
 
+@onready var hp = 3
+@export var max_hp = 3
 
-
+func set_start_hp()
