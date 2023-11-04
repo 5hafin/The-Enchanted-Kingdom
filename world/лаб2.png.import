@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crixs0qrxojty"
-path="res://.godot/imported/заборы.png-7138b571cc0f39eadf6fde1a7c75393a.ctex"
+uid="uid://bm5n5wr2qyxqa"
+path="res://.godot/imported/лаб2.png-97a1d2bff4722bcbd62cbad583ecb1dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://world/заборы.png"
-dest_files=["res://.godot/imported/заборы.png-7138b571cc0f39eadf6fde1a7c75393a.ctex"]
+source_file="res://world/лаб2.png"
+dest_files=["res://.godot/imported/лаб2.png-97a1d2bff4722bcbd62cbad583ecb1dd.ctex"]
 
 [params]
 
