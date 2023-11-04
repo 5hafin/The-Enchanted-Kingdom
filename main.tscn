@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://undekxqck8t3"]
+[gd_scene load_steps=8 format=3 uid="uid://undekxqck8t3"]
 
 [ext_resource type="Texture2D" uid="uid://cp3d8q4x0ia73" path="res://world/64 на 64.png" id="1_llqot"]
 [ext_resource type="PackedScene" uid="uid://bdcueh35nvqt6" path="res://player/main_player.tscn" id="1_mr8pm"]
+[ext_resource type="Script" path="res://main.gd" id="1_n7lvc"]
 [ext_resource type="PackedScene" uid="uid://dmqgkqsset1qo" path="res://player/angry_mob.tscn" id="2_0q5jb"]
 [ext_resource type="PackedScene" uid="uid://bavw7plm5gqjv" path="res://player/camera_2d.tscn" id="6_lhba1"]
 
@@ -28,6 +29,7 @@ texture = ExtResource("1_llqot")
 sources/0 = SubResource("TileSetAtlasSource_dghkp")
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_n7lvc")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0ffte")
