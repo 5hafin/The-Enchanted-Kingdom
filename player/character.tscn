@@ -1,0 +1,141 @@
+[gd_scene load_steps=19 format=3 uid="uid://d2vwt5u5wu07j"]
+
+[ext_resource type="Script" path="res://Character.gd" id="1_hj00e"]
+[ext_resource type="Texture2D" uid="uid://cm5f8ylppdoj4" path="res://player/pp/левый бок - шаг лев.png" id="1_jllp7"]
+[ext_resource type="Texture2D" uid="uid://c73ppdo371k1c" path="res://player/pp/левый бок.png" id="2_l3o4c"]
+[ext_resource type="Texture2D" uid="uid://jvwn8h3f2lxa" path="res://player/pp/левый бок -шаг правой.png" id="3_jnche"]
+[ext_resource type="Texture2D" uid="uid://drmnmp0tqjdj6" path="res://player/pp/спина -шаг левойpng.png" id="4_0kemj"]
+[ext_resource type="Texture2D" uid="uid://b8cloq4w7wgx1" path="res://player/pp/2- задняя часть(готово).png" id="5_n3dw8"]
+[ext_resource type="Texture2D" uid="uid://bvnwfgn2j676c" path="res://player/pp/спина -шаг правой.png" id="6_dlyce"]
+[ext_resource type="Texture2D" uid="uid://cq62tg3kojm3v" path="res://player/pp/правый бок -шаг левой.png" id="7_52fpq"]
+[ext_resource type="Texture2D" uid="uid://cw43gpyi6qmvr" path="res://player/pp/правый бок.png" id="8_ego1h"]
+[ext_resource type="Texture2D" uid="uid://bg05in8f7ldac" path="res://player/pp/правый бок- шаг правой.png" id="9_c2jnw"]
+[ext_resource type="Texture2D" uid="uid://fskmwwlvjn8k" path="res://player/pp/1 лиц сторонв- шаг левой готово.png" id="10_pne01"]
+[ext_resource type="Texture2D" uid="uid://pyheuif8gcwt" path="res://player/pp/пер часть.png" id="11_waurf"]
+[ext_resource type="Texture2D" uid="uid://caoxmsregnsuv" path="res://player/pp/1 лиц сторонв- шаг правой( готово).png" id="12_g0tso"]
+[ext_resource type="Texture2D" uid="uid://dbg6c3xfubg5" path="res://player/веньетка.png" id="14_jdyrl"]
+[ext_resource type="PackedScene" uid="uid://cqk1fyixmlaka" path="res://player/ui/hp_bar.tscn" id="15_gvtu6"]
+[ext_resource type="Texture2D" uid="uid://d064va86k0okj" path="res://player/ui/Cool-Glow-Light-Effect-PNG-Photos.png" id="16_ni7ax"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_buvcu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0kemj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n3dw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dlyce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n3dw8")
+}],
+"loop": true,
+"name": &"вверх",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jllp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l3o4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jnche")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l3o4c")
+}],
+"loop": true,
+"name": &"влево",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pne01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_waurf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g0tso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_waurf")
+}],
+"loop": true,
+"name": &"вниз",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_52fpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ego1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c2jnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ego1h")
+}],
+"loop": true,
+"name": &"вправо",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_waurf")
+}],
+"loop": true,
+"name": &"стоит",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xtchi"]
+radius = 4.0
+height = 30.0
+
+[node name="Character" type="CharacterBody2D"]
+script = ExtResource("1_hj00e")
+
+[node name="Anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_buvcu")
+animation = &"стоит"
+frame_progress = 0.53641
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 20)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_xtchi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="Веньетка" type="Sprite2D" parent="Camera2D"]
+visible = false
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("14_jdyrl")
+
+[node name="Node2D" type="Node2D" parent="Camera2D"]
+position = Vector2(0, 8)
+scale = Vector2(1.3, 1.3)
+
+[node name="TextureProgressBar" parent="Camera2D/Node2D" instance=ExtResource("15_gvtu6")]
+light_mask = 8
+visibility_layer = 8
+offset_left = 226.923
+offset_top = -193.846
+offset_right = 290.923
+offset_bottom = -129.846
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -0.499969)
+scale = Vector2(1, 1.001)
+texture = ExtResource("16_ni7ax")
