@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://c6pxdclstqyal" path="res://world/5.png" id="8_e8fnm"]
 [ext_resource type="Texture2D" uid="uid://dd6nyx0h2bg7g" path="res://world/6.png" id="9_0niiy"]
 [ext_resource type="Texture2D" uid="uid://dpcwwn7stlt50" path="res://world/7.png" id="10_1kity"]
-[ext_resource type="Texture2D" uid="uid://drcb45vkelbrc" path="res://world/8.png" id="11_atp5w"]
+[ext_resource type="Texture2D" uid="uid://d02i3wykblf8" path="res://world/8.png" id="11_atp5w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pv2b3"]
 texture = ExtResource("2_hkig0")

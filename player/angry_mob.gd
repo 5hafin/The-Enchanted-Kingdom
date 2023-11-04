@@ -62,3 +62,6 @@ func wander():
 func _on_standing_timer_timeout():
 	stands = true
 	pass # Replace with function body.
+
+func die():
+	queue_free()
