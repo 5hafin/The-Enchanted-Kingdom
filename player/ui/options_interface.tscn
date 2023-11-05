@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dykfft2ntie6p"]
+[gd_scene load_steps=3 format=3 uid="uid://dykfft2ntie6p"]
 
 [ext_resource type="Script" path="res://player/ui/options_interface.gd" id="1_p3r0s"]
+[ext_resource type="Texture2D" uid="uid://c77eiqg4xvdk5" path="res://player/заставка.png" id="2_kni6r"]
 
 [node name="Interface" type="Control"]
 layout_mode = 3
@@ -28,5 +29,9 @@ text = "Volume
 layout_mode = 2
 text = "Back
 "
+
+[node name="Заставка" type="Sprite2D" parent="."]
+position = Vector2(576, 363)
+texture = ExtResource("2_kni6r")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
