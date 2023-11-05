@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 
-var SPEED = 100.0
+var SPEED = 400.0
 
 @onready var hp = 3
 @export var max_hp = 3
@@ -15,7 +15,7 @@ var stands = true
 var destination = Vector2()
 var prev_position = Vector2()
 var target = null
-var default_speed = 50
+var default_speed = 95
 
 
 func _ready():
@@ -37,12 +37,12 @@ func search_for_target():
 	var pl = get_parent().get_player()
 	
 	if target:
-		if position.distance_to(target.position) > 400:
+		if position.distance_to(target.position) > 700:
 			cancel_movment()
 		else:
 			set_destination(target.position)
 	
-	elif position.distance_to(pl.position) < 200:
+	elif position.distance_to(pl.position) < 400:
 		cancel_movment()
 		SPEED = default_speed*2 if SPEED == default_speed else SPEED
 		

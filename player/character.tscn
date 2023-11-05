@@ -117,6 +117,7 @@ collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
 position = Vector2(-2, 17.5)
+scale = Vector2(1.00231, 1)
 shape = SubResource("RectangleShape2D_adfku")
 
 [connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]
