@@ -12,6 +12,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p3r0s")
 
+[node name="Заставка" type="Sprite2D" parent="."]
+position = Vector2(576, 363)
+texture = ExtResource("2_kni6r")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
@@ -29,9 +33,5 @@ text = "Volume
 layout_mode = 2
 text = "Back
 "
-
-[node name="Заставка" type="Sprite2D" parent="."]
-position = Vector2(576, 363)
-texture = ExtResource("2_kni6r")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

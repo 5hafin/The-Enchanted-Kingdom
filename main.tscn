@@ -310,7 +310,7 @@ collision_layer = 1
 [node name="Character" parent="." instance=ExtResource("13_8wi3m")]
 light_mask = 2
 z_index = 2
-position = Vector2(3703, 476)
+position = Vector2(-3178, -1060)
 collision_mask = 3
 
 [node name="Camera2D2" parent="Character" instance=ExtResource("14_glyx3")]
