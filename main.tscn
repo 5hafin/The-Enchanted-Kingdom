@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d2vwt5u5wu07j" path="res://player/character.tscn" id="13_8wi3m"]
 [ext_resource type="PackedScene" uid="uid://cqk1fyixmlaka" path="res://player/ui/hp_bar.tscn" id="14_e6qdy"]
 [ext_resource type="PackedScene" uid="uid://kapxf5djk2w4" path="res://player/ui/camera_2d.tscn" id="14_glyx3"]
-[ext_resource type="Texture2D" uid="uid://sgch6rqoxfvk" path="res://player/circle.png" id="16_6ruqr"]
+[ext_resource type="Texture2D" uid="uid://b8fu5mxw7j5jx" path="res://player/light.png" id="15_3uaw6"]
 [ext_resource type="PackedScene" uid="uid://c3neltxoa8em2" path="res://boss/boss.tscn" id="16_ixnix"]
 [ext_resource type="PackedScene" uid="uid://yqph50ff633g" path="res://traps/trap_kust.tscn" id="18_krga4"]
 
@@ -205,6 +205,9 @@ position = Vector2(-2, -2)
 occluder = SubResource("OccluderPolygon2D_ol1fc")
 
 [node name="Character" parent="." instance=ExtResource("13_8wi3m")]
+modulate = Color(0.407843, 0.407843, 0.407843, 1)
+light_mask = 2
+z_index = 2
 position = Vector2(893, 85)
 
 [node name="Camera2D2" parent="Character" instance=ExtResource("14_glyx3")]
@@ -214,13 +217,11 @@ position_smoothing_speed = 5.0
 [node name="PointLight2D" type="PointLight2D" parent="Character"]
 position = Vector2(-2.01931, 7.10488)
 scale = Vector2(0.82125, 0.5775)
-energy = 0.88
+energy = 1.68
 shadow_enabled = true
-shadow_filter = 1
-shadow_filter_smooth = 7.2
-texture = ExtResource("16_6ruqr")
+shadow_filter_smooth = 10.7
+texture = ExtResource("15_3uaw6")
 offset = Vector2(1.85, 1.55)
-texture_scale = 2.42
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
