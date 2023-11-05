@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bgi0auwgwo6nr"]
 
 [ext_resource type="Script" path="res://player/ui/Interface.gd" id="1_5l112"]
-[ext_resource type="Texture2D" uid="uid://ddmi0ete0wr0a" path="res://player/ui/interface.png" id="2_7ja87"]
+[ext_resource type="Texture2D" uid="uid://c77eiqg4xvdk5" path="res://player/заставка.png" id="2_m6m7r"]
 
 [node name="Interface" type="Control"]
 layout_mode = 3
@@ -15,7 +15,7 @@ script = ExtResource("1_5l112")
 [node name="Interface" type="Sprite2D" parent="."]
 position = Vector2(594, 326)
 scale = Vector2(0.640625, 0.640625)
-texture = ExtResource("2_7ja87")
+texture = ExtResource("2_m6m7r")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0

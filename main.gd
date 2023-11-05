@@ -12,7 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	play_music()
+	
 	pass
 
 func get_player():
@@ -21,5 +21,4 @@ func get_player():
 func get_health():
 	return $CanvasLayer/hp_bar
 
-func play_music():
-	$AudioStreamPlayer2D.play()
+
