@@ -22,13 +22,16 @@ func _ready():
 	SPEED = default_speed
 
 func _process(delta):
+	
 	if velocity:
 		prev_position = position
 		move_and_slide()
 	wander()
 	search_for_target()
+	
 	if target_intercepted and can_bite:
 		bite(target)
+		_on_BiteCoolDown_timeout()
 	
 func search_for_target():
 	var pl = get_parent().get_player()
@@ -73,18 +76,16 @@ func wander():
 		elif position.distance_to(prev_position)<= 0.1:
 			cancel_movment()
 
-func _on_Standingtimer_timeout():
-	stands = true
-	
-	pass # Replace with function body.
+
 
 func _on_BiteCoolDown_timeout():
 	can_bite = true
-	$BiteCoolDown.start(1)
+	$BiteCoolDown.start(3)
 
 func bite(targ):
 	targ.reduce_hp(bite_strength)
 	can_bite = false
+	
 	#запуск таймера кулдауна
 	
 
