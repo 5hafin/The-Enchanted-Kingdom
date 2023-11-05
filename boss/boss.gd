@@ -37,12 +37,12 @@ func search_for_target():
 	var pl = get_parent().get_parent().get_parent().get_parent().get_player()
 	
 	if target:
-		if position.distance_to(target.position) > 200:
+		if position.distance_to(target.position) > 400:
 			cancel_movment()
 		else:
 			set_destination(target.position)
 	
-	elif position.distance_to(pl.position) < 100:
+	elif position.distance_to(pl.position) < 200:
 		cancel_movment()
 		SPEED = default_speed*3 if SPEED == default_speed else SPEED
 		
