@@ -34,7 +34,7 @@ func _process(delta):
 		
 	
 func search_for_target():
-	var pl = get_parent().get_parent().get_parent().get_parent().get_player()
+	var pl = get_parent().get_player()
 	
 	if target:
 		if position.distance_to(target.position) > 400:
