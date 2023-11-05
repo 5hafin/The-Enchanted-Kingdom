@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://c3neltxoa8em2"]
 
 [ext_resource type="Script" path="res://boss/boss.gd" id="1_1gkfn"]
-[ext_resource type="Texture2D" uid="uid://cupdmm616i8xc" path="res://world/куст.png" id="2_jcde1"]
+[ext_resource type="Texture2D" uid="uid://di8pcst4s4uc4" path="res://boss/призрак.png" id="2_ia5yu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r47c2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_jcde1")
+"texture": ExtResource("2_ia5yu")
 }],
 "loop": true,
 "name": &"default",

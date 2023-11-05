@@ -22,7 +22,7 @@ func _process(delta):
 
 func _on_BiteCoolDown_timeout():
 	can_bite = true
-	$BiteCoolDown.start(3)
+	$BiteCoolDown.start(1)
 
 func bite(targ):
 	targ.reduce_hp(bite_strength)
