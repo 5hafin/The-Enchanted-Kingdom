@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxg5ne8yf4cs1"
-path="res://.godot/imported/разбитое.png-ed6234011eec684bfac02b39eaa79666.ctex"
+uid="uid://b5thmxwuwlokx"
+path="res://.godot/imported/3 сердца.png-67b2bcdcff16c5120bd1f975a5d773d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://world/разбитое.png"
-dest_files=["res://.godot/imported/разбитое.png-ed6234011eec684bfac02b39eaa79666.ctex"]
+source_file="res://player/ui/3 сердца.png"
+dest_files=["res://.godot/imported/3 сердца.png-67b2bcdcff16c5120bd1f975a5d773d1.ctex"]
 
 [params]
 

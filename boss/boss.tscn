@@ -1,9 +1,54 @@
-[gd_scene format=3 uid="uid://c3neltxoa8em2"]
+[gd_scene load_steps=7 format=3 uid="uid://c3neltxoa8em2"]
+
+[ext_resource type="Script" path="res://boss/boss.gd" id="1_1gkfn"]
+[ext_resource type="Texture2D" uid="uid://cupdmm616i8xc" path="res://world/куст.png" id="2_jcde1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r47c2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jcde1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_osoao"]
+height = 44.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8841m"]
+radius = 19.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fbpfx"]
+radius = 39.0512
 
 [node name="boss" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_1gkfn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r47c2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_osoao")
 
-[node name="Standing_timer" type="Timer" parent="."]
+[node name="Standingtimer" type="Timer" parent="."]
+
+[node name="BiteCoolDown" type="Timer" parent="."]
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+shape = SubResource("CircleShape2D_8841m")
+
+[node name="BiteArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BiteArea"]
+shape = SubResource("CircleShape2D_fbpfx")
+
+[connection signal="area_entered" from="BiteArea" to="." method="_on_bite_area_area_entered"]
+[connection signal="area_exited" from="BiteArea" to="." method="_on_bite_area_area_exited"]

@@ -4,14 +4,15 @@ extends CharacterBody2D
 
 var SPEED = 200.0
 
-
-
-
-@onready var animch = get_node("Character")
+@export var max_hp = 3
+@onready var currentHealth : int = max_hp
+@onready var valuehp = get_parent().get_health()
 var vel = Vector2()
 
 
 func _ready():
+	#var animch = get_node("Character")
+	
 	pass
 
 
@@ -21,9 +22,12 @@ func _ready():
 func _physics_process(delta):
 	var direction = Input.get_vector("left","right","up","down")
 	velocity = direction*SPEED
-	
+	_start_Hp(currentHealth, max_hp)
 	start_anim()
 	move_and_slide()
+
+
+
 
 func die():
 	queue_free()
@@ -40,6 +44,16 @@ func start_anim():
 	elif velocity.y == 0 and velocity.x == 0:
 		$Anim.play("стоит")
 
-
-
-
+func _start_Hp(currentHealth, max_hp):
+	
+	valuehp.value = currentHealth 
+	valuehp.max_value = max_hp
+	
+func update_hp():
+	valuehp.value = currentHealth
+	
+func reduce_hp(val):
+	currentHealth -= val
+	update_hp()
+	
+		

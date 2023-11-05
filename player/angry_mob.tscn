@@ -9,6 +9,8 @@ radius = 14.0022
 
 [node name="angry_mob" instance=ExtResource("1_n545h")]
 script = ExtResource("2_2okrp")
+is_player = false
+max_hp = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="0"]
 position = Vector2(0, 0.230001)
