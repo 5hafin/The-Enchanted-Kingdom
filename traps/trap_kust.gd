@@ -30,14 +30,18 @@ func bite(targ):
 	
 	#запуск таймера кулдауна
 	
-func _on_bite_area_area_entered(area):
+func _on_bitarea_area_entered(area):
 	if area.get_parent() == target:
 		target_intercepted = true
 		target.reduce_hp(bite_strength)
+		
 	pass # Replace with function body.
 
 
-func _on_bite_area_area_exited(area):
+func _on_bitarea_area_exited(area):
 	if area.get_parent() == target:
 		target_intercepted = false
 	pass # Replace with function body.
+
+
+

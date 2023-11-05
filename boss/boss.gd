@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 var SPEED = 200.0
 
-@onready var hp = 1
+@onready var hp = 3
 @export var max_hp = 3
 var target_intercepted = false
 var can_bite = true
@@ -28,7 +28,8 @@ func _process(delta):
 		move_and_slide()
 	wander()
 	search_for_target()
-	
+	if hp <= 0:
+		die()
 	
 		
 	
@@ -100,3 +101,9 @@ func _on_bite_area_area_exited(area):
 	if area.get_parent() == target:
 		target_intercepted = false
 	pass # Replace with function body.
+	
+func reduce_hp(val):
+	hp -= val
+
+func die():	
+	queue_free()

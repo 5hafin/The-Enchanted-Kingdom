@@ -25,7 +25,7 @@ func _physics_process(delta):
 	_start_Hp(currentHealth, max_hp)
 	start_anim()
 	move_and_slide()
-	if currentHealth ==0:
+	if currentHealth <=0:
 		die()
 
 
@@ -33,7 +33,7 @@ func _physics_process(delta):
 
 func die():
 	
-		queue_free()
+	queue_free()
 
 func start_anim():
 	if velocity.x >0:
