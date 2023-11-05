@@ -262,7 +262,115 @@ texture = ExtResource("15_3uaw6")
 texture_scale = 2.35
 
 [node name="trap_kust" parent="." instance=ExtResource("18_krga4")]
-position = Vector2(4438, 142)
+position = Vector2(4102, 2088)
+
+[node name="trap_kust9" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(4167, 238)
+
+[node name="trap_kust10" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(3880, -268)
+
+[node name="trap_kust11" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(4470, -361)
+
+[node name="trap_kust12" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(4428, 332)
+
+[node name="trap_kust13" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1958, -663)
+
+[node name="trap_kust18" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2301, 228)
+
+[node name="trap_kust19" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(2892, 2752)
+
+[node name="trap_kust20" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1998, 2823)
+
+[node name="trap_kust21" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1837, 634)
+
+[node name="trap_kust29" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2688, 1564)
+
+[node name="trap_kust35" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-3126, 1964)
+
+[node name="trap_kust36" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1999, 2473)
+
+[node name="trap_kust37" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2398, 3056)
+
+[node name="trap_kust38" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1693, 2279)
+
+[node name="trap_kust42" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1693, 2279)
+
+[node name="trap_kust43" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1574, 1123)
+
+[node name="trap_kust44" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(668, 1527)
+
+[node name="trap_kust39" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(662, 2097)
+
+[node name="trap_kust40" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(245, 2613)
+
+[node name="trap_kust41" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-452, 2342)
+
+[node name="trap_kust30" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2172, 2009)
+
+[node name="trap_kust31" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1818, 1671)
+
+[node name="trap_kust32" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-874, 1069)
+
+[node name="trap_kust33" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1075, 1793)
+
+[node name="trap_kust34" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1994, 1072)
+
+[node name="trap_kust23" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-132, 752)
+
+[node name="trap_kust24" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-847, 244)
+
+[node name="trap_kust25" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-525, -334)
+
+[node name="trap_kust26" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(5089, 2692)
+
+[node name="trap_kust27" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-1199, -716)
+
+[node name="trap_kust28" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-826, -730)
+
+[node name="trap_kust22" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2848, -342)
+
+[node name="trap_kust14" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(-2830, -1092)
+
+[node name="trap_kust15" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1359, -136)
+
+[node name="trap_kust16" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(1973, 489)
+
+[node name="trap_kust17" parent="." instance=ExtResource("18_krga4")]
+position = Vector2(699, -862)
 
 [node name="trap_kust6" parent="." instance=ExtResource("18_krga4")]
 position = Vector2(4080, 1461)
@@ -288,6 +396,36 @@ position = Vector2(3338, -504)
 [node name="trapkust" parent="." instance=ExtResource("19_1wm7h")]
 position = Vector2(4048, -148)
 
+[node name="trapkust7" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(2051, 1136)
+
+[node name="trapkust8" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(2051, 27)
+
+[node name="trapkust9" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(5858, 2709)
+
+[node name="trapkust10" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(-2841, 3252)
+
+[node name="trapkust14" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(622, -306)
+
+[node name="trapkust15" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(505, 668)
+
+[node name="trapkust16" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(-3158, 1740)
+
+[node name="trapkust11" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(4209, 1187)
+
+[node name="trapkust12" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(3035, 3217)
+
+[node name="trapkust13" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(-36, -330)
+
 [node name="trapkust2" parent="." instance=ExtResource("19_1wm7h")]
 position = Vector2(2740, -506)
 
@@ -301,7 +439,7 @@ position = Vector2(1197, 936)
 position = Vector2(2553, 1166)
 
 [node name="trapkust5" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(3386, 460)
+position = Vector2(-608, 2587)
 
 [node name="boss" parent="." instance=ExtResource("16_ixnix")]
 position = Vector2(4274, 723)
@@ -318,8 +456,8 @@ position = Vector2(1, 1)
 position_smoothing_speed = 5.0
 
 [node name="PointLight2D" type="PointLight2D" parent="Character"]
-position = Vector2(-2.01931, 7.10488)
-scale = Vector2(0.82125, 0.5775)
+position = Vector2(-30.5574, 7)
+scale = Vector2(0.749113, 0.5775)
 color = Color(0.917647, 0.0862745, 0.411765, 1)
 energy = 1.31
 shadow_enabled = true
