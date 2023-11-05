@@ -9,7 +9,7 @@ var SPEED = 200.0
 var target_intercepted = false
 var can_bite = true
 
-var bite_strength = 1
+var bite_strength = 3
 
 var stands = true
 var destination = Vector2()
@@ -29,9 +29,8 @@ func _process(delta):
 	wander()
 	search_for_target()
 	
-	if target_intercepted and can_bite:
-		bite(target)
-		_on_BiteCoolDown_timeout()
+	
+		
 	
 func search_for_target():
 	var pl = get_parent().get_player()
@@ -93,6 +92,7 @@ func bite(targ):
 func _on_bite_area_area_entered(area):
 	if area.get_parent() == target:
 		target_intercepted = true
+		target.reduce_hp(bite_strength)
 	pass # Replace with function body.
 
 
