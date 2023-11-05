@@ -205,9 +205,11 @@ position = Vector2(-2, -2)
 occluder = SubResource("OccluderPolygon2D_ol1fc")
 
 [node name="trap_kust" parent="." instance=ExtResource("18_krga4")]
+modulate = Color(0.447059, 0.447059, 0.447059, 1)
 position = Vector2(701, 292)
 
 [node name="boss" parent="." instance=ExtResource("16_ixnix")]
+modulate = Color(0.635294, 0.635294, 0.635294, 1)
 position = Vector2(426, 298)
 collision_layer = 1
 
