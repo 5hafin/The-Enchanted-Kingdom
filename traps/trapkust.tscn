@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cupdmm616i8xc" path="res://world/куст.png" id="2_4umi1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_thfhg"]
-radius = 30.0832
+radius = 18.0278
 
 [node name="trapkust" type="Node2D"]
 script = ExtResource("1_1xoe4")
