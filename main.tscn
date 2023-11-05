@@ -205,7 +205,7 @@ position = Vector2(-2, -2)
 occluder = SubResource("OccluderPolygon2D_ol1fc")
 
 [node name="Character" parent="." instance=ExtResource("13_8wi3m")]
-modulate = Color(0.380392, 0.380392, 0.380392, 1)
+modulate = Color(0.407843, 0.407843, 0.407843, 1)
 light_mask = 2
 z_index = 2
 position = Vector2(893, 85)
@@ -217,6 +217,7 @@ position_smoothing_speed = 5.0
 [node name="PointLight2D" type="PointLight2D" parent="Character"]
 position = Vector2(-2.01931, 7.10488)
 scale = Vector2(0.82125, 0.5775)
+energy = 1.68
 shadow_enabled = true
 shadow_filter_smooth = 10.7
 texture = ExtResource("15_3uaw6")
