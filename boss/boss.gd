@@ -15,7 +15,7 @@ var stands = true
 var destination = Vector2()
 var prev_position = Vector2()
 var target = null
-var default_speed = 95
+var default_speed = 90
 
 
 func _ready():
