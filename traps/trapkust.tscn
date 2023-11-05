@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://uwfovnctbdwd"]
 
 [ext_resource type="Script" path="res://traps/trapkust.gd" id="1_1xoe4"]
-[ext_resource type="Texture2D" uid="uid://dh1csq1iu00ma" path="res://world/f6c802d229ddf22e.png" id="1_jvemc"]
+[ext_resource type="Texture2D" uid="uid://cupdmm616i8xc" path="res://world/куст.png" id="2_4umi1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_thfhg"]
 radius = 30.0832
@@ -11,7 +11,7 @@ script = ExtResource("1_1xoe4")
 
 [node name="F6c802d229Ddf22e" type="Sprite2D" parent="."]
 position = Vector2(4, -3)
-texture = ExtResource("1_jvemc")
+texture = ExtResource("2_4umi1")
 
 [node name="Area2D" type="Area2D" parent="."]
 
