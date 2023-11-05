@@ -209,6 +209,10 @@ occluder = SubResource("OccluderPolygon2D_ol1fc")
 modulate = Color(0.447059, 0.447059, 0.447059, 1)
 position = Vector2(701, 292)
 
+[node name="trapkust" parent="." instance=ExtResource("19_1wm7h")]
+modulate = Color(0.447059, 0.447059, 0.447059, 1)
+position = Vector2(743, 172)
+
 [node name="boss" parent="." instance=ExtResource("16_ixnix")]
 modulate = Color(0.635294, 0.635294, 0.635294, 1)
 position = Vector2(426, 298)
@@ -243,6 +247,3 @@ offset_top = 19.0
 offset_right = 227.0
 offset_bottom = 83.0
 value = 0.0
-
-[node name="trapkust" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(743, 172)

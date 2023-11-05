@@ -4,7 +4,7 @@ extends Node2D
 var target_intercepted = false
 var can_bite = true
 var target = null
-var bite_strength = 3
+var bite_strength = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
