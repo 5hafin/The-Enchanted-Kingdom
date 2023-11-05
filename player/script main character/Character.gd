@@ -33,7 +33,7 @@ func _physics_process(delta):
 
 func die():
 	
-	queue_free()
+	get_tree().change_scene_to_file("res://player/ui/interface.tscn")
 
 func start_anim():
 	if velocity.x >0:
@@ -56,6 +56,7 @@ func update_hp():
 	valuehp.value = currentHealth
 	
 func reduce_hp(val):
+	$AudioStreamPlayer2D.play()
 	currentHealth -= val
 	update_hp()
 	
