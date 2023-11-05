@@ -55,6 +55,7 @@ icon = ExtResource("4_ndfjb")
 alignment = 0
 
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+modulate = Color(0.596078, 0.733333, 1, 1)
 layout_mode = 2
 icon = ExtResource("5_puu3v")
 alignment = 0

@@ -42,6 +42,7 @@ text = "NONE
 "
 
 [node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+modulate = Color(0.596078, 0.733333, 1, 1)
 layout_mode = 2
 icon = ExtResource("3_nf0j3")
 
