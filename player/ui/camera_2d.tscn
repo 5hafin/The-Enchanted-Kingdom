@@ -1,14 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://kapxf5djk2w4"]
-
-[ext_resource type="Texture2D" uid="uid://dbg6c3xfubg5" path="res://player/веньетка.png" id="2_ywk56"]
+[gd_scene format=3 uid="uid://kapxf5djk2w4"]
 
 [node name="Camera2D" type="Camera2D"]
 ignore_rotation = false
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
-
-[node name="Веньетка" type="Sprite2D" parent="."]
-visible = false
-scale = Vector2(0.65, 0.65)
-texture = ExtResource("2_ywk56")

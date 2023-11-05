@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://d2vwt5u5wu07j"]
 
-[ext_resource type="Script" path="res://Character.gd" id="1_hj00e"]
 [ext_resource type="Texture2D" uid="uid://cm5f8ylppdoj4" path="res://player/pp/левый бок - шаг лев.png" id="1_jllp7"]
+[ext_resource type="Script" path="res://player/script main character/Character.gd" id="1_vt5np"]
 [ext_resource type="Texture2D" uid="uid://c73ppdo371k1c" path="res://player/pp/левый бок.png" id="2_l3o4c"]
 [ext_resource type="Texture2D" uid="uid://jvwn8h3f2lxa" path="res://player/pp/левый бок -шаг правой.png" id="3_jnche"]
 [ext_resource type="Texture2D" uid="uid://drmnmp0tqjdj6" path="res://player/pp/спина -шаг левойpng.png" id="4_0kemj"]
@@ -100,7 +100,7 @@ radius = 4.0
 size = Vector2(30, 9)
 
 [node name="Character" type="CharacterBody2D"]
-script = ExtResource("1_hj00e")
+script = ExtResource("1_vt5np")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_buvcu")
