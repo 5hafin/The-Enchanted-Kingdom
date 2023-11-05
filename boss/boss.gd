@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 
-var SPEED = 200.0
+var SPEED = 100.0
 
 @onready var hp = 3
 @export var max_hp = 3
@@ -44,7 +44,7 @@ func search_for_target():
 	
 	elif position.distance_to(pl.position) < 200:
 		cancel_movment()
-		SPEED = default_speed*3 if SPEED == default_speed else SPEED
+		SPEED = default_speed*2 if SPEED == default_speed else SPEED
 		
 		target = pl
 
@@ -104,6 +104,7 @@ func _on_bite_area_area_exited(area):
 	
 func reduce_hp(val):
 	hp -= val
-
+	
+	
 func die():	
 	queue_free()

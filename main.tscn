@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://undekxqck8t3"]
+[gd_scene load_steps=36 format=3 uid="uid://undekxqck8t3"]
 
 [ext_resource type="Texture2D" uid="uid://cp3d8q4x0ia73" path="res://world/64 на 64.png" id="1_llqot"]
 [ext_resource type="Script" path="res://main.gd" id="1_n7lvc"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://b8fu5mxw7j5jx" path="res://player/light.png" id="15_3uaw6"]
 [ext_resource type="PackedScene" uid="uid://c3neltxoa8em2" path="res://boss/boss.tscn" id="16_ixnix"]
 [ext_resource type="PackedScene" uid="uid://yqph50ff633g" path="res://traps/trap_kust.tscn" id="18_krga4"]
+[ext_resource type="PackedScene" uid="uid://uwfovnctbdwd" path="res://traps/trapkust.tscn" id="19_1wm7h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dghkp"]
 texture = ExtResource("1_llqot")
@@ -242,3 +243,6 @@ offset_top = 19.0
 offset_right = 227.0
 offset_bottom = 83.0
 value = 0.0
+
+[node name="trapkust" parent="." instance=ExtResource("19_1wm7h")]
+position = Vector2(743, 172)

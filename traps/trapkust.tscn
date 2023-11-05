@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://uwfovnctbdwd"]
+
+[ext_resource type="Script" path="res://traps/trapkust.gd" id="1_1xoe4"]
+[ext_resource type="Texture2D" uid="uid://dh1csq1iu00ma" path="res://world/f6c802d229ddf22e.png" id="1_jvemc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_thfhg"]
+radius = 30.0832
+
+[node name="trapkust" type="Node2D"]
+script = ExtResource("1_1xoe4")
+
+[node name="F6c802d229Ddf22e" type="Sprite2D" parent="."]
+position = Vector2(4, -3)
+texture = ExtResource("1_jvemc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3, -3)
+shape = SubResource("CircleShape2D_thfhg")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
