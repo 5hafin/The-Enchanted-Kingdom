@@ -1,17 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://yqph50ff633g"]
+[gd_scene load_steps=2 format=3 uid="uid://yqph50ff633g"]
 
 [ext_resource type="Texture2D" uid="uid://cupdmm616i8xc" path="res://world/куст.png" id="1_11hbi"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h0nil"]
-radius = 3.0
-height = 10.0
 
 [node name="trap_kust" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_11hbi")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 10)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_h0nil")

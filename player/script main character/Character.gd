@@ -8,7 +8,8 @@ var SPEED = 200.0
 @onready var currentHealth : int = max_hp
 @onready var valuehp = get_parent().get_health()
 var vel = Vector2()
-
+var bestiary = {}
+var bes 
 
 func _ready():
 	#var animch = get_node("Character")
@@ -56,8 +57,10 @@ func update_hp():
 	valuehp.value = currentHealth
 	
 func reduce_hp(val):
+	
 	$AudioStreamPlayer2D.play()
 	currentHealth -= val
 	update_hp()
 	
-		
+func add_bes(bes, img):
+	pass

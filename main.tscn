@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://undekxqck8t3"]
+[gd_scene load_steps=49 format=3 uid="uid://undekxqck8t3"]
 
 [ext_resource type="Texture2D" uid="uid://cp3d8q4x0ia73" path="res://world/64 на 64.png" id="1_llqot"]
 [ext_resource type="Script" path="res://main.gd" id="1_n7lvc"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://yqph50ff633g" path="res://traps/trap_kust.tscn" id="18_krga4"]
 [ext_resource type="PackedScene" uid="uid://uwfovnctbdwd" path="res://traps/trapkust.tscn" id="19_1wm7h"]
 [ext_resource type="AudioStream" uid="uid://b4ruhxrhcrsrv" path="res://sounds/New_Composition_2_1.mp3" id="20_q7w2s"]
+[ext_resource type="PackedScene" uid="uid://bf77xkwosb1p1" path="res://world/orb.tscn" id="24_mdor3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dghkp"]
 texture = ExtResource("1_llqot")
@@ -484,3 +485,90 @@ color = Color(0, 0.513726, 0.533333, 1)
 stream = ExtResource("20_q7w2s")
 volume_db = -26.235
 autoplay = true
+
+[node name="Orb" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2464, -1053)
+
+[node name="Orb2" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2004, -659)
+
+[node name="Orb3" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-915, -630)
+
+[node name="Orb4" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2615, -274)
+
+[node name="Orb5" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-1925, 606)
+
+[node name="Orb6" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2209, 1526)
+
+[node name="Orb7" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-881, 1002)
+
+[node name="Orb8" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-829, 26)
+
+[node name="Orb9" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(747, 1534)
+
+[node name="Orb10" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(391, 826)
+
+[node name="Orb11" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-571, 2551)
+
+[node name="Orb12" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-528, 2786)
+
+[node name="Orb13" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-557, 2415)
+
+[node name="Orb14" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(2850, 2864)
+
+[node name="Orb15" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(2201, 2793)
+
+[node name="Orb16" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(1552, 2144)
+
+[node name="Orb17" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(4189, 1495)
+
+[node name="Orb18" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(4139, 2379)
+
+[node name="Orb19" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(2621, 1132)
+
+[node name="Orb20" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(1338, 483)
+
+[node name="Orb21" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(2108, -508)
+
+[node name="Orb22" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(4082, 126)
+
+[node name="Orb23" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(4474, -31)
+
+[node name="Orb24" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(4096, -238)
+
+[node name="Orb25" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(654, -381)
+
+[node name="Orb26" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2047, 2219)
+
+[node name="Orb27" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-2813, 3106)
+
+[node name="Orb28" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-3146, 1947)
+
+[node name="Orb29" parent="." instance=ExtResource("24_mdor3")]
+position = Vector2(-1160, 1191)

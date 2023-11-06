@@ -16,7 +16,7 @@ var destination = Vector2()
 var prev_position = Vector2()
 var target = null
 var default_speed = 90
-
+@onready var pl = get_parent().get_player()
 
 func _ready():
 	SPEED = default_speed
@@ -34,7 +34,7 @@ func _process(delta):
 		
 	
 func search_for_target():
-	var pl = get_parent().get_player()
+	
 	
 	if target:
 		if position.distance_to(target.position) > 700:
@@ -108,3 +108,5 @@ func reduce_hp(val):
 	
 func die():	
 	queue_free()
+	pl.add_bes("Ахерон - В королевстве был одним из стражей королевского замка. Темные чары заколдовали его и сейчас его душа служит колдуну также доблестно и стойко, как ранее страж служил королю. Предстает в облике черного огненного призрака. Его лицо искажено из-за ужасов лабиринта, а некогда человеческое тело обгорело и погрузилось в огонь. Страж поглощает в свой огонь всех, кто захочет противостоять колдуну и снять злую магию с лабиринта. Взаимодействовать с ним могут только другие порождения лабиринта. Уязвим от острых ядовитых растений гнилой земли", $Sprite2D.texture)
+

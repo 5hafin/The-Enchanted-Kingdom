@@ -20,4 +20,5 @@ func _on_area_2d_area_entered(area):
 	target = area.get_parent()
 	target_intercepted = true
 	target.reduce_hp(bite_strength)
+	target.add_bes("Зачарованный куст - ранее был яркой  и ароматной кустовой розой. Теперь же, под силами проклятья, его шипы стали настолько острыми, что ранят любого, кто соприкоснется с ними, а запах испортился и превратился в гниль. Нужно всегда быть на чеку, ведь внешне он ничем не отличается от других растений лабиринта", $F6c802d229Ddf22e.texture)
 	pass # Replace with function body.
