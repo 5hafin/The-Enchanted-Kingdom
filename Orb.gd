@@ -14,7 +14,7 @@ func _ready():
 	SPEED = default_speed
 
 func _process(delta):
-	
+	$AnimatedSprite2D.play("default")
 	if velocity:
 		prev_position = position
 		move_and_slide()
