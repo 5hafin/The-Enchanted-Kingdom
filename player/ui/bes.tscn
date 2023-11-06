@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://cs2uv1hkblw7h"]
+
+[ext_resource type="Script" path="res://player/ui/bes.gd" id="1_5fwa4"]
+[ext_resource type="Texture2D" uid="uid://c77eiqg4xvdk5" path="res://player/заставка.png" id="1_56t8g"]
+[ext_resource type="Texture2D" uid="uid://br8hqsa3qv2ea" path="res://player/книга2.png" id="2_m7ics"]
+[ext_resource type="Texture2D" uid="uid://di8pcst4s4uc4" path="res://boss/призрак.png" id="3_6erbc"]
+[ext_resource type="Texture2D" uid="uid://b8n15ygxesdse" path="res://player/ui/Без имени-1.png" id="3_8aql3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5fwa4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_56t8g")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_m7ics")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 148.0
+offset_top = 95.0
+offset_right = 148.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.71, 0.71)
+size_flags_horizontal = 0
+texture = ExtResource("3_6erbc")
+stretch_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect2"]
+modulate = Color(0.262745, 0.262745, 0.262745, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 581.0
+offset_top = 102.0
+offset_right = 581.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+text = "				Ахерон
+	В королевстве был одним из стражей
+ королевского замка. Темные чары заколдовали
+ его и сейчас его душа служит 
+колдуну также доблестно и стойко
+, как ранее страж служил королю.
+ Предстает в облике черного огненного
+ призрака. Его лицо искажено из-за ужасов
+ лабиринта, а некогда человеческое тело
+ обгорело и погрузилось в огонь. Страж
+ поглощает в свой огонь всех, кто захочет
+ противостоять колдуну и снять злую
+ магию с лабиринта.
+ Взаимодействовать с ним могут только другие 
+порождения лабиринта. Уязвим от острых ядовитых
+ растений гнилой земли
+"
+fit_content = true
+autowrap_mode = 0
+tab_size = 9
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Button" type="Button" parent="MarginContainer"]
+layout_mode = 2
+icon = ExtResource("3_8aql3")
+
+[connection signal="pressed" from="MarginContainer/Button" to="." method="_on_button_pressed"]

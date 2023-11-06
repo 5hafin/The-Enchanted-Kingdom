@@ -28,7 +28,7 @@ script = ExtResource("1_eh473")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ypes2")
-frame_progress = 0.68903
+frame_progress = 0.734446
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 color = Color(0.172549, 1, 1, 1)
