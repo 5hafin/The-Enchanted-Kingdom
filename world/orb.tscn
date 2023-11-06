@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bf77xkwosb1p1"]
+[gd_scene load_steps=6 format=3 uid="uid://bf77xkwosb1p1"]
 
 [ext_resource type="Script" path="res://Orb.gd" id="1_eh473"]
 [ext_resource type="Texture2D" uid="uid://d1xtbu7ripilf" path="res://world/свет.png" id="2_4f0sc"]
@@ -15,7 +15,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ebkir"]
+radius = 8.0
+
 [node name="Orb" type="CharacterBody2D"]
+collision_layer = 4
 script = ExtResource("1_eh473")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -27,5 +31,9 @@ shadow_enabled = true
 texture = ExtResource("3_1vidv")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -2)
+shape = SubResource("CircleShape2D_ebkir")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
