@@ -397,10 +397,10 @@ position = Vector2(3338, -504)
 position = Vector2(4048, -148)
 
 [node name="trapkust7" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(2051, 1136)
+position = Vector2(2678, 1675)
 
 [node name="trapkust8" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(2051, 27)
+position = Vector2(1373, 537)
 
 [node name="trapkust9" parent="." instance=ExtResource("19_1wm7h")]
 position = Vector2(5858, 2709)
@@ -421,7 +421,7 @@ position = Vector2(-3158, 1740)
 position = Vector2(4209, 1187)
 
 [node name="trapkust12" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(3035, 3217)
+position = Vector2(3023, 3174)
 
 [node name="trapkust13" parent="." instance=ExtResource("19_1wm7h")]
 position = Vector2(-36, -330)
@@ -433,7 +433,7 @@ position = Vector2(2740, -506)
 position = Vector2(957, 1448)
 
 [node name="trapkust4" parent="." instance=ExtResource("19_1wm7h")]
-position = Vector2(1197, 936)
+position = Vector2(369, 1163)
 
 [node name="trapkust6" parent="." instance=ExtResource("19_1wm7h")]
 position = Vector2(2553, 1166)
