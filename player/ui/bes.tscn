@@ -91,7 +91,8 @@ anchor_bottom = 1.0
 offset_top = -119.0
 offset_right = 359.0
 grow_vertical = 0
-theme_override_constants/margin_left = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
